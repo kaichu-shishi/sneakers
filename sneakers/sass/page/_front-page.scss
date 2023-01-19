@@ -1,0 +1,71 @@
+@use "../variable" as v;
+@use "../responsive" as r;
+
+
+/*---------------------------------
+ トップページの記述
+---------------------------------*/
+.header {
+    width: 100%;
+    background-color: #fff;
+    position: fixed;
+    z-index: 10;
+    padding: 20px 40px;
+    @include r.mq-max(sp) {
+        padding: 20px 16px;
+    }
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    &__menu-btn {
+		width: 30px;
+		height: 30px;
+        margin-right: 5px;
+        position: fixed;//半透明の全画面マスクがかかっているときでもスクロール固定できるようにするため
+        top: 25px;
+        right: 45px;
+		z-index: 20;
+        cursor: pointer;
+        span {
+            display: block;
+            background-color: #333;
+            width: 30px;
+            height: 2px;
+            border-radius: 4px;
+            position: absolute;
+            transition: all .5s;
+            &:nth-of-type(1) {
+                top: 4px;
+            }
+            &:nth-of-type(2) {
+                top: 14px;
+            }
+            &:nth-of-type(3) {
+                bottom: 4px;
+            }
+        }
+        // 以下はハンバーガーメニューをタップしたときの挙動
+        &.active span {
+            &:nth-of-type(1) {
+		        transform: translateY(10px) rotate(-315deg);
+            }
+            &:nth-of-type(2) {
+                opacity: 0;
+            }
+            &:nth-of-type(3) {
+		        transform: translateY(-10px) rotate(315deg);
+            }
+        }
+    }
+}
+
+.hero {
+    &__video {
+        // display: block;
+        width: 100%;
+        // height: calc(100vh - 100px);
+        // @include r.mq-max(sp) {
+            
+        // }
+    }
+}

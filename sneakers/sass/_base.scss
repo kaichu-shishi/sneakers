@@ -1,0 +1,58 @@
+@use "variable" as v;
+@use "responsive" as r;
+
+
+/*---------------------------------
+ ベーススタイルの記述
+---------------------------------*/
+html {
+    font-size: 62.5%;
+}
+body {
+    font-family: 'YuGothic', 'Yu Gothic', 'ヒラギノ角ゴシック', 'Hiragino Sans', 'メイリオ', 'Meiryo', 'Osaka', sans-serif;
+}
+a {
+    text-decoration: none;
+}
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+img {
+    //スマホでは画像の大きさを親要素に連動させる
+    @include r.mq-max(sp) {
+        display: block;
+        width: 100%;//画像の大きさを親要素に連動させるため
+        height: auto;//画像の縦横比を維持するため
+    }
+    // @include r.mq-max(sp-tab) {
+    //     display: block;
+    //     max-width: 100%;
+    //     margin: 0 auto;
+    // }
+}
+.hidden-sp {
+    @include r.mq-max(sp) {
+        display: none !important;
+    }
+}
+.hidden-sptab {
+    @include r.mq-max(sp-tab) {
+        display: none !important;
+    }
+}
+.hidden-pc {
+    @include r.mq-min(pc) {
+        display: none !important;
+    }
+}
+.hidden-tabpc {
+    @include r.mq-min(tab-pc) {
+        display: none !important;
+    }
+}
+
+
+/*---------------------------------
+ 以下、自分で追加したオリジナルCSS
+---------------------------------*/
