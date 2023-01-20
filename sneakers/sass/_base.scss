@@ -5,10 +5,13 @@
 /*---------------------------------
  ベーススタイルの記述
 ---------------------------------*/
-html {
-    font-size: 62.5%;
-}
+// html {
+//     font-size: 62.5%;
+// }
 body {
+    color: #121212;
+    font-size: 0.9rem;
+    line-height: 1.7;
     font-family: 'YuGothic', 'Yu Gothic', 'ヒラギノ角ゴシック', 'Hiragino Sans', 'メイリオ', 'Meiryo', 'Osaka', sans-serif;
 }
 a {
@@ -19,6 +22,7 @@ ul {
     padding: 0;
 }
 img {
+    max-width: 100%;
     //スマホでは画像の大きさを親要素に連動させる
     @include r.mq-max(sp) {
         display: block;

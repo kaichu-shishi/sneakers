@@ -27,7 +27,7 @@ $breakpoints: (
     @return $number;
 }
 
-@mixin font-size($size: 16, $base: 10) {
+@mixin font-size($size: 16, $base: 16) {
     $size: strip-unit($size);
     font-size: math.div($size, $base) * 1rem;
 }

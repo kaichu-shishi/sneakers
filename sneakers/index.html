@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/favicon.ico">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <title>Sneakers</title>
 </head>
 
@@ -19,16 +21,16 @@
             <span></span>
             <span></span>
         </div>
-        <nav>
-            <ul>
-                <li></li>
-                <li></li>
-                <li></li>
+        <nav class="header__gnav">
+            <ul class="header__gnav-menu-lists">
+                <li class="header__gnav-menu-item"><a href="#pickup">PICK UP</a></li>
+                <li class="header__gnav-menu-item"><a href="#feature">FEATURE</a></li>
+                <li class="header__gnav-menu-item"><a href="#contact">CONTACT</a></li>
             </ul>
-            <ul>
-                <li></li>
-                <li></li>
-                <li></li>
+            <ul class="header__gnav-sns-lists">
+                <li class="header__gnav-sns-item"><a href="https://twitter.com/" target="_blank">Twitter</a></li>
+                <li class="header__gnav-sns-item"><a href="https://www.facebook.com/" target="_blank">facebook</a></li>
+                <li class="header__gnav-sns-item"><a href="https://www.instagram.com/" target="_blank">instagram</a></li>
             </ul>
         </nav>
         <div class="header__mask"></div>
@@ -38,27 +40,38 @@
         <div class="hero">
             <video class="hero__video" src="images/herovideo.mp4" loop autoplay muted playsinline></video>
         </div>
-        <section>
-            <h2>PICK UP</h2>
-            <div>スライダー（slick）</div>
+        <section class="pickup" id="pickup">
+            <h2 class="ty-section-title">PICK UP</h2>
+            <ul class="slider-3" id="js-slider-3">
+                <li><div class="slide-img"><img src="images/pickup1.jpg" alt="ピックアップ１"></div></li>
+                <li><div class="slide-img"><img src="images/pickup2.jpg" alt="ピックアップ２"></div></li>
+                <li><div class="slide-img"><img src="images/pickup3.jpg" alt="ピックアップ３"></div></li>
+                <li><div class="slide-img"><img src="images/pickup4.jpg" alt="ピックアップ４"></div></li>
+                <li><div class="slide-img"><img src="images/pickup5.jpg" alt="ピックアップ５"></div></li>
+                <li><div class="slide-img"><img src="images/pickup6.jpg" alt="ピックアップ６"></div></li>
+                <li><div class="slide-img"><img src="images/pickup7.jpg" alt="ピックアップ７"></div></li>
+                <li><div class="slide-img"><img src="images/pickup8.jpg" alt="ピックアップ８"></div></li>
+                <li><div class="slide-img"><img src="images/pickup9.jpg" alt="ピックアップ９"></div></li>
+            </ul>
         </section>
-        <section>
+        <section class="feature" id="feature">
             <div>インナー
-                <h2>FEATURE（display: grid;）</h2>
+                <h2 class="ty-section-title">FEATURE（display: grid;）</h2>
                 <div>×9個</div>
             </div>
         </section>
-        <section>
+        <section class="contact" id="contact">
             <div>
-                <h2>CONTACT</h2>
+                <h2 class="ty-section-title">CONTACT</h2>
                 <div>テキスト</div>
                 <form action=""></form>
             </div>
         </section>
     </main>
 
-    <footer></footer>
+    <footer class="footer"></footer>
     <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="js/index.js"></script>
 </body>
 </html>
