@@ -1,3 +1,25 @@
-main {
-    padding-top: 80px;
+@use "variable" as v;
+@use "responsive" as r;
+
+
+/*---------------------------------
+ レイアウトの記述
+---------------------------------*/
+.ly-main {
+    padding-top: v.$header-height;
+}
+
+.ly-pickup {
+    width: 100%;
+    padding: 100px 0 50px 0;
+}
+
+.ly-feature {
+    padding: 100px 16px 50px 16px;
+    max-width: 1240px;//1240px以下では「width: 100%;」と同じ役割を果たす。
+    margin-left: auto;
+    margin-right: auto;
+    @include r.mq-max(sp) {
+        padding: 80px 16px;
+    }
 }

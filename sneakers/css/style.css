@@ -388,6 +388,7 @@ th {
  タイポグラフィーの記述
 ---------------------------------*/
 .ty-section-title {
+  font-weight: bold;
   font-size: 2.25rem;
   margin-bottom: 30px;
   text-align: center;
@@ -450,8 +451,28 @@ img {
 /*---------------------------------
  以下、自分で追加したオリジナルCSS
 ---------------------------------*/
-main {
+/*---------------------------------
+ レイアウトの記述
+---------------------------------*/
+.ly-main {
   padding-top: 80px;
+}
+
+.ly-pickup {
+  width: 100%;
+  padding: 100px 0 50px 0;
+}
+
+.ly-feature {
+  padding: 100px 16px 50px 16px;
+  max-width: 1240px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media screen and (max-width: 599px) {
+  .ly-feature {
+    padding: 80px 16px;
+  }
 }
 
 /*---------------------------------
@@ -597,6 +618,14 @@ main {
   }
 }
 
+.js-fadein {
+  opacity: 0;
+  -webkit-transform: translateY(20px);
+          transform: translateY(20px);
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
 /* PICK UP > スライダー */
 .slider-3 .slick-slide {
   margin: 0 60px;
@@ -701,4 +730,6 @@ main {
 
 .dots-3 .slick-dots .slick-active button {
   background: #0a467d;
-}/*# sourceMappingURL=style.css.map */
+}
+
+/* PICK UP > スライダー　ここまで *//*# sourceMappingURL=style.css.map */
