@@ -132,3 +132,34 @@
     transform: translateY(20px);
     transition: all 1s;
 }
+
+.feature {
+    &__grid {
+        display: grid;
+        gap: 26px;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+    &__grid-item {
+        transition: all  0.3s ease;
+        box-shadow: 0 0 8px 4px #ccc;
+        &-img {
+            object-fit: cover;
+            aspect-ratio: 3 / 2;
+        }
+        &-paragraphs {
+            padding: 30px;
+        }
+        &-category {
+            font-size: 0.75rem;
+            margin-bottom: 20px;
+        }
+        &-text {
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        &-date {
+            font-size: 0.75rem;
+            text-align: right;
+        }
+    }
+}
