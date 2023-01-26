@@ -403,6 +403,12 @@ th {
 /*---------------------------------
  ベーススタイルの記述
 ---------------------------------*/
+@media screen and (min-width: 1921px) {
+  html {
+    font-size: 120%;
+  }
+}
+
 body {
   color: #121212;
   font-size: 0.9rem;
@@ -483,6 +489,11 @@ img {
 @media screen and (max-width: 599px) {
   .ly-feature {
     padding: 80px 16px;
+  }
+}
+@media screen and (min-width: 1921px) {
+  .ly-feature {
+    max-width: 1500px;
   }
 }
 
@@ -704,6 +715,11 @@ img {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+}
+@media screen and (min-width: 1921px) {
+  .contact__contents {
+    max-width: 1500px;
   }
 }
 .contact__info {

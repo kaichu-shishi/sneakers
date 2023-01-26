@@ -25,6 +25,9 @@
     @include r.mq-max(sp) {
         padding: 80px 16px;
     }
+    @include r.mq-min(large) {
+        max-width: 1500px;
+    }
 }
 
 .ly-contact {

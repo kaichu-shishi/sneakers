@@ -179,6 +179,9 @@
         @include r.mq-max(sp) {
             flex-direction: column;
         }
+        @include r.mq-min(large) {
+            max-width: 1500px;
+        }
     }
     &__info {
         width: 45%;

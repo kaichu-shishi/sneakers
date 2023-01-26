@@ -6,6 +6,7 @@ $breakpoints: (
     'tab-pc': 600px,
     'sp-tab': 1024px,
     'pc': 1025px,
+    'large': 1921px
 ) !default;
 
 @mixin mq-min($breakpoint) {
