@@ -5,10 +5,11 @@
 /* PICK UP > スライダー */
 .slider-3 .slick-slide {
     margin: 0 60px;
+    padding: 60px 0;
     @include r.mq-max(sp) {
         margin: 0 20px;
+        padding: 20px 0;
     }
-    padding: 60px 0;
     position: relative;
 }
 .slider-3 .slick-slide .slide-img {

@@ -393,6 +393,12 @@ th {
   margin-bottom: 30px;
   text-align: center;
 }
+@media screen and (max-width: 599px) {
+  .ty-section-title {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+}
 
 /*---------------------------------
  ベーススタイルの記述
@@ -460,7 +466,12 @@ img {
 
 .ly-pickup {
   width: 100%;
-  padding: 100px 0 50px 0;
+  padding: 100px 0 0 0;
+}
+@media screen and (max-width: 599px) {
+  .ly-pickup {
+    padding: 80px 0 0 0;
+  }
 }
 
 .ly-feature {
@@ -472,6 +483,15 @@ img {
 @media screen and (max-width: 599px) {
   .ly-feature {
     padding: 80px 16px;
+  }
+}
+
+.ly-contact {
+  padding: 50px 0;
+}
+@media screen and (max-width: 599px) {
+  .ly-contact {
+    padding: 80px 0;
   }
 }
 
@@ -645,6 +665,11 @@ img {
 .feature__grid-item-paragraphs {
   padding: 30px;
 }
+@media screen and (max-width: 599px) {
+  .feature__grid-item-paragraphs {
+    padding: 16px;
+  }
+}
 .feature__grid-item-category {
   font-size: 0.75rem;
   margin-bottom: 20px;
@@ -658,6 +683,83 @@ img {
   text-align: right;
 }
 
+.contact {
+  color: white;
+  background-color: #121212;
+}
+.contact__contents {
+  max-width: 1240px;
+  padding: 0 16px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+@media screen and (max-width: 599px) {
+  .contact__contents {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+.contact__info {
+  width: 45%;
+}
+@media screen and (max-width: 599px) {
+  .contact__info {
+    width: 100%;
+  }
+}
+.contact__info-paragraph {
+  margin-bottom: 30px;
+}
+.contact__form {
+  width: 45%;
+}
+@media screen and (max-width: 599px) {
+  .contact__form {
+    width: 100%;
+  }
+}
+.contact__form-input-field {
+  width: 100%;
+  background-color: #fff;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+.contact__form-button {
+  width: 200px;
+  color: #fff;
+  background-color: #121212;
+  border: solid 1px #fff;
+  padding: 12px 0;
+  margin-bottom: 0;
+  text-align: center;
+}
+@media screen and (max-width: 599px) {
+  .contact__form-button {
+    width: 100%;
+  }
+}
+.contact__form-button:hover {
+  color: #202020;
+  background-color: #fff;
+}
+
+.footer {
+  color: white;
+  background-color: #121212;
+}
+.footer__copyright {
+  text-align: center;
+  padding: 10px;
+  font-size: 0.75rem;
+}
+
 /* PICK UP > スライダー */
 .slider-3 .slick-slide {
   margin: 0 60px;
@@ -667,6 +769,7 @@ img {
 @media screen and (max-width: 599px) {
   .slider-3 .slick-slide {
     margin: 0 20px;
+    padding: 20px 0;
   }
 }
 

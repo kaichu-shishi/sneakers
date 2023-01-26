@@ -131,26 +131,28 @@
                     </div>
                 </div>
         </section>
-        <section class="contact" id="contact">
-            <div>
-                <h2 class="ty-section-title">CONTACT</h2>
-                <div>
-                    <p>当サイトはスニーカー専門のWebメディアです。</p>
-                    <p>Sneakers編集部ではスニーカーに関する情報提供を募集しております。また、記事についてのご意見・ご要望から、企業様からのメディアミックスのご依頼まで幅広く受け付けております。</p>
-                    <p>Sneakers編集部にコンタクトを希望される場合は、次のフォームに必要事項を記載の上「SEND」を押して送信してください（※全てのお問い合わせにお返事することを保証するものではありません。あらかじめご了承ください）。</p>
+        <section class="contact ly-contact" id="contact">
+            <h2 class="ty-section-title">CONTACT</h2>
+            <div class="contact__contents">
+                <div class="contact__info">
+                    <p class="contact__info-paragraph">当サイトはスニーカー専門のWebメディアです。</p>
+                    <p class="contact__info-paragraph">Sneakers編集部ではスニーカーに関する情報提供を募集しております。また、記事についてのご意見・ご要望から、企業様からのメディアミックスのご依頼まで幅広く受け付けております。</p>
+                    <p class="contact__info-paragraph">Sneakers編集部にコンタクトを希望される場合は、次のフォームに必要事項を記載の上「SEND」を押して送信してください（※全てのお問い合わせにお返事することを保証するものではありません。あらかじめご了承ください）。</p>
                 </div>
-                <form>
-                    <label for="name">Name:<br><input type="text" id="name"></label>
-                    <label for="mail">Mail:<br><input type="mail" id="mail"></label>
-                    <label for="message">Message:<br><textarea id="message"></textarea></label>
-                    <button>SEND</button>
-                </form>
+                <div class="contact__form">
+                    <form>
+                        <label for="name">Name:<br><input class="contact__form-input-field" type="text" name="name" id="name"></label>
+                        <label for="email">Mail:<br><input class="contact__form-input-field" type="email" name="email" id="email"></label>
+                        <label for="message">Message:<br><textarea class="contact__form-input-field" name="message" id="message"></textarea></label>
+                        <button class="contact__form-button" type="submit">SEND</button>
+                    </form>
+                </div>
             </div>
         </section>
     </main>
 
     <footer class="footer">
-        <small>©︎ Sneakers</small>
+        <p class="footer__copyright">&copy; Sneakers</p>
     </footer>
 
     <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
